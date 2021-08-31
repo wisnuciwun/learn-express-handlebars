@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Stock</th>
+      <th scope="col">Desc</th>
+      <th scope="col">Images</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each rows}}
+     <tr>
+       <th scope="row">{{this.Id}}</th>
+       <td>{{this.Name}}</td>
+       <td>{{this.Stock}}</td>
+       <td>{{this.Description}}</td>
+        <td>{{this.Image}}</td>
+       <td><a href="#" type="button" class="btn btn-dark btn-small">Edit record</a></td>
+     </tr>
+    {{/each}}
+  </tbody>
+</table>
